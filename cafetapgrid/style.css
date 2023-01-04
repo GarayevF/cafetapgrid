@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 3rem;
+}
+
+#Title {
+  padding: 2rem 0;
+}
+#Title .all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Title .all .left h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  -webkit-text-decoration: none solid rgb(33, 37, 41);
+          text-decoration: none solid rgb(33, 37, 41);
+  color: #212529;
+  word-spacing: 0px;
+  margin: 0;
+}
+#Title .all .right {
+  text-align: end;
+}
+#Title .all .right .box {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #868686;
+  padding: 10px 1rem;
+  border-radius: 6px;
+}
+#Title .all .right .box p {
+  margin: 0 10px 0 0;
+}
+
+#Cards .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  grid-template-rows: auto;
+}
+#Cards .container .card {
+  box-shadow: 0px 3px 3px #eeeeee;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 170px auto;
+}
+#Cards .container .card img {
+  height: 170px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+#Cards .container .card .card-body {
+  padding: 1rem 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+#Cards .container .card .card-body .card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 21.6px;
+  -webkit-text-decoration: none solid rgb(36, 36, 36);
+          text-decoration: none solid rgb(36, 36, 36);
+  color: #242424;
+  margin: 0;
+}
+#Cards .container .card .card-body .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  -webkit-text-decoration: none solid rgb(62, 62, 62);
+          text-decoration: none solid rgb(62, 62, 62);
+  color: #3e3e3e;
+}
+#Cards .container .card .card-body .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Cards .container .card .card-body .details .left, #Cards .container .card .card-body .details .right {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 5px;
+}
+#Cards .container .card .card-body .details .left p, #Cards .container .card .card-body .details .right p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-text-decoration: none solid rgb(33, 37, 41);
+          text-decoration: none solid rgb(33, 37, 41);
+  color: #212529;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    padding: 0 25px;
+  }
+  #Cards .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #Cards .container .card .card-body .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  #Cards .container .card .card-body .details .left, #Cards .container .card .card-body .details .right {
+    grid-template-columns: 20px auto;
+  }
+  #Cards .container .card .card-body .details .left i, #Cards .container .card .card-body .details .right i {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  #Cards .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #Cards .container .card .card-body .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  #Cards .container .card .card-body .details .left, #Cards .container .card .card-body .details .right {
+    grid-template-columns: 20px auto;
+  }
+  #Cards .container .card .card-body .details .left i, #Cards .container .card .card-body .details .right i {
+    text-align: center;
+  }
+}
+@media (max-width: 1300px) {
+  #Cards .container .card .card-body .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  #Cards .container .card .card-body .details .left, #Cards .container .card .card-body .details .right {
+    grid-template-columns: 20px auto;
+  }
+  #Cards .container .card .card-body .details .left i, #Cards .container .card .card-body .details .right i {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
